@@ -5,21 +5,21 @@
 class Juso < Formula
   desc "Korean postal code lookup CLI"
   homepage "https://github.com/kyungw00k/juso"
-  version "1.1.0"
+  version "1.2.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/kyungw00k/juso/releases/download/v1.1.0/juso_darwin_amd64.tar.gz"
-      sha256 "ee91001b296a529257a78b0fe675a683b755775ce606adef91a4044b7cdd25e5"
+      url "https://github.com/kyungw00k/juso/releases/download/v1.2.0/juso_darwin_amd64.tar.gz"
+      sha256 "5cda31a53cd63fea5b9732e8efbf78f063972f58b6a3f171086d820e890c86f6"
 
       def install
         bin.install "juso"
       end
     end
     on_arm do
-      url "https://github.com/kyungw00k/juso/releases/download/v1.1.0/juso_darwin_arm64.tar.gz"
-      sha256 "4600c8c3b1dada642d32170144bfb7f24eac02d8eccf290b5838222ddaa03700"
+      url "https://github.com/kyungw00k/juso/releases/download/v1.2.0/juso_darwin_arm64.tar.gz"
+      sha256 "2e493738e452615b761905442409fe01c895427d85084ea11c78628f93ce5334"
 
       def install
         bin.install "juso"
@@ -30,8 +30,8 @@ class Juso < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kyungw00k/juso/releases/download/v1.1.0/juso_linux_amd64.tar.gz"
-        sha256 "e5164b205fea175a1c5aa0d0d17215acc013eebff678a784bb6a79267d2f0aac"
+        url "https://github.com/kyungw00k/juso/releases/download/v1.2.0/juso_linux_amd64.tar.gz"
+        sha256 "ec4e5b80a7725e3e82b9dbf12352ae4385c215b242b70637fa908adcd6c602da"
 
         def install
           bin.install "juso"
@@ -40,8 +40,8 @@ class Juso < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kyungw00k/juso/releases/download/v1.1.0/juso_linux_arm64.tar.gz"
-        sha256 "0515aa5b541c9e38491e2f9e5abea837e66df669d79fb16b716de144ffae61d0"
+        url "https://github.com/kyungw00k/juso/releases/download/v1.2.0/juso_linux_arm64.tar.gz"
+        sha256 "68de097105d67449fe94f33a0c69073a121404faef2f5897757e02fb0f4391a5"
 
         def install
           bin.install "juso"
