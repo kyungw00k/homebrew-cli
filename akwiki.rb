@@ -5,21 +5,21 @@
 class Akwiki < Formula
   desc "Personal wiki static site generator inspired by akngs's wiki"
   homepage "https://github.com/kyungw00k/akwiki"
-  version "1.1.0"
+  version "1.2.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/kyungw00k/akwiki/releases/download/v1.1.0/akwiki_darwin_amd64.tar.gz"
-      sha256 "4a03fdb8144ab936a12957bf74dfd2a3d481fe247105aa6898add416e9123dee"
+      url "https://github.com/kyungw00k/akwiki/releases/download/v1.2.0/akwiki_darwin_amd64.tar.gz"
+      sha256 "9aa1fcc56586d2c560ed5c4f84e32b6d4f14797806df2a5eff7410d82983a314"
 
       def install
         bin.install "akwiki"
       end
     end
     on_arm do
-      url "https://github.com/kyungw00k/akwiki/releases/download/v1.1.0/akwiki_darwin_arm64.tar.gz"
-      sha256 "fdb2569210b357e79c7be1f690cf22a9e75c2400281321f39372e8e118b7777c"
+      url "https://github.com/kyungw00k/akwiki/releases/download/v1.2.0/akwiki_darwin_arm64.tar.gz"
+      sha256 "d0c4e6081afb2e8557656a794a0f1807f86ce3703d72a85d2df93da0390a2fb7"
 
       def install
         bin.install "akwiki"
@@ -30,8 +30,8 @@ class Akwiki < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kyungw00k/akwiki/releases/download/v1.1.0/akwiki_linux_amd64.tar.gz"
-        sha256 "8b4fe7786f93a4114e6c809537b0d6daf8247eca830132fd8496c08477f1914b"
+        url "https://github.com/kyungw00k/akwiki/releases/download/v1.2.0/akwiki_linux_amd64.tar.gz"
+        sha256 "7007f07338d5837968812151ce158a94d5d41aaa6851e0a83ec52701469c8659"
 
         def install
           bin.install "akwiki"
@@ -40,8 +40,8 @@ class Akwiki < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kyungw00k/akwiki/releases/download/v1.1.0/akwiki_linux_arm64.tar.gz"
-        sha256 "39095474f1fd7e76d72bed3b584fb151ca5b78c2d9edd18cef1c6c23673bfd40"
+        url "https://github.com/kyungw00k/akwiki/releases/download/v1.2.0/akwiki_linux_arm64.tar.gz"
+        sha256 "c74a4f5756aebd92a88d9585892d03b063260dccb2b57e7d6a4197042142a52e"
 
         def install
           bin.install "akwiki"
