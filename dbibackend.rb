@@ -5,18 +5,48 @@
 class Dbibackend < Formula
   desc "Install local titles into Nintendo Switch via USB"
   homepage "https://github.com/kyungw00k/dbibackend"
-  version "1.2.0"
+  version "1.3.0"
   license "MIT"
 
-  depends_on "libusb"
-  depends_on :macos
+  on_macos do
+    on_intel do
+      url "https://github.com/kyungw00k/dbibackend/releases/download/v1.3.0/dbibackend_darwin_amd64.tar.gz"
+      sha256 "588a4a0f329037b6aaa1540dadf9ad4f146f30379a069031153287e483ae83c8"
 
-  on_arm do
-    url "https://github.com/kyungw00k/dbibackend/releases/download/v1.2.0/dbibackend_darwin_arm64.tar.gz"
-    sha256 "92a02ee78b64439ea424df5e376ecb75b34098bef81ac4297d44891d8ed139ff"
+      def install
+        bin.install "dbibackend"
+      end
+    end
+    on_arm do
+      url "https://github.com/kyungw00k/dbibackend/releases/download/v1.3.0/dbibackend_darwin_arm64.tar.gz"
+      sha256 "cca813aaddd271c7d79875210030010f89b99bff12018e20614b4c5f23706132"
 
-    def install
-      bin.install "dbibackend"
+      def install
+        bin.install "dbibackend"
+      end
+    end
+  end
+
+  on_linux do
+    on_intel do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/kyungw00k/dbibackend/releases/download/v1.3.0/dbibackend_linux_amd64.tar.gz"
+        sha256 "fa8d11ca1b78d1a175a9689c4a651713e93aba6acf2e9e381aa79da8cb33214b"
+
+        def install
+          bin.install "dbibackend"
+        end
+      end
+    end
+    on_arm do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/kyungw00k/dbibackend/releases/download/v1.3.0/dbibackend_linux_arm64.tar.gz"
+        sha256 "ec27e94cfbd1c9f4d0b267f5b10ff86cd23004c2a9eb3325fbe0e866949bdbca"
+
+        def install
+          bin.install "dbibackend"
+        end
+      end
     end
   end
 
