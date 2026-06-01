@@ -5,13 +5,15 @@
 class Dbibackend < Formula
   desc "Install local titles into Nintendo Switch via USB"
   homepage "https://github.com/kyungw00k/dbibackend"
-  version "1.1.0"
+  version "1.2.0"
   license "MIT"
+
+  depends_on "libusb"
   depends_on :macos
 
   on_arm do
-    url "https://github.com/kyungw00k/dbibackend/releases/download/v1.1.0/dbibackend_darwin_arm64.tar.gz"
-    sha256 "4057d9086df3bf2c64423c261eadcbf24820c88d8d06f1ebf8503d71de086d19"
+    url "https://github.com/kyungw00k/dbibackend/releases/download/v1.2.0/dbibackend_darwin_arm64.tar.gz"
+    sha256 "92a02ee78b64439ea424df5e376ecb75b34098bef81ac4297d44891d8ed139ff"
 
     def install
       bin.install "dbibackend"
