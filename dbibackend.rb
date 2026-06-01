@@ -5,21 +5,21 @@
 class Dbibackend < Formula
   desc "Install local titles into Nintendo Switch via USB"
   homepage "https://github.com/kyungw00k/dbibackend"
-  version "1.4.1"
+  version "1.5.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/kyungw00k/dbibackend/releases/download/v1.4.1/dbibackend_darwin_amd64.tar.gz"
-      sha256 "02aa368b9f36ad7389bcda9bcf9c6c92d70b5cf99c54f84eec9d6a4d388f44fc"
+      url "https://github.com/kyungw00k/dbibackend/releases/download/v1.5.0/dbibackend_darwin_amd64.tar.gz"
+      sha256 "9206a3a22c71c6f1139547e74672e9aae2f9e1eefe5f41d64d3cfcf4072c6660"
 
       def install
         bin.install "dbibackend"
       end
     end
     on_arm do
-      url "https://github.com/kyungw00k/dbibackend/releases/download/v1.4.1/dbibackend_darwin_arm64.tar.gz"
-      sha256 "0096b31615688fdb41849d43549d21df0f9296de4f0cee04398e3ed8ad1c08fc"
+      url "https://github.com/kyungw00k/dbibackend/releases/download/v1.5.0/dbibackend_darwin_arm64.tar.gz"
+      sha256 "7bf390d02098f3ddf56ab9cb2ba8143f0ba9cd33dee339a729e5eaee3d7f7214"
 
       def install
         bin.install "dbibackend"
@@ -30,8 +30,8 @@ class Dbibackend < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kyungw00k/dbibackend/releases/download/v1.4.1/dbibackend_linux_amd64.tar.gz"
-        sha256 "ba13553715b311ba9b2ceff330dbe9ed7f0b8b34a942572c0c35cd3a825533c2"
+        url "https://github.com/kyungw00k/dbibackend/releases/download/v1.5.0/dbibackend_linux_amd64.tar.gz"
+        sha256 "16ee38401009649f52e2c032c36dfda116e308c08a0a5d096b383e7c47554f20"
 
         def install
           bin.install "dbibackend"
@@ -40,8 +40,8 @@ class Dbibackend < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kyungw00k/dbibackend/releases/download/v1.4.1/dbibackend_linux_arm64.tar.gz"
-        sha256 "0760a4b87fcd17192e4a5df814f25f75b8c0b84a1e03e1e9a5e6a0e5facbe726"
+        url "https://github.com/kyungw00k/dbibackend/releases/download/v1.5.0/dbibackend_linux_arm64.tar.gz"
+        sha256 "6d9f447edb3dfc3740206904617fe9f9ac0f72a21444ea226785e34930921ef1"
 
         def install
           bin.install "dbibackend"
