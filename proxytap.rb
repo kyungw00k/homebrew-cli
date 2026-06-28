@@ -69,6 +69,7 @@ class Proxytap < Formula
   end
 
   test do
-    assert_match "proxy-listen", shell_output("#{bin}/proxytapd --help 2>&1")
+    assert_match "proxytapd", shell_output("#{bin}/proxytapd --version")
+    assert_match version.to_s, shell_output("#{bin}/proxytapd --version")
   end
 end
