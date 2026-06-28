@@ -1,6 +1,7 @@
 # typed: false
 # frozen_string_literal: true
 
+# proxytap rotating anonymous-proxy gateway with MITM detection.
 class Proxytap < Formula
   desc "Rotating anonymous-proxy gateway with MITM detection"
   homepage "https://github.com/kyungw00k/proxytap"
