@@ -5,21 +5,21 @@
 class Upbit < Formula
   desc "AI-native CLI for Upbit cryptocurrency exchange"
   homepage "https://github.com/kyungw00k/upbit"
-  version "1.4.0"
+  version "1.5.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/kyungw00k/upbit/releases/download/v1.4.0/upbit_darwin_amd64.tar.gz"
-      sha256 "70e5f8cbbe96068083ac1781d55a7de909059fb62cff6f85f4db6b0db2c2075c"
+      url "https://github.com/kyungw00k/upbit/releases/download/v1.5.0/upbit_darwin_amd64.tar.gz"
+      sha256 "be33e7363abd746c414a0cd309969d2874d4615c829fb2e59e784e335dc41c0e"
 
       def install
         bin.install "upbit"
       end
     end
     on_arm do
-      url "https://github.com/kyungw00k/upbit/releases/download/v1.4.0/upbit_darwin_arm64.tar.gz"
-      sha256 "e3957ddfb885b55f4001752437d57c2c9c1ec56b4a0418e0eaa8fcfb29edf2fe"
+      url "https://github.com/kyungw00k/upbit/releases/download/v1.5.0/upbit_darwin_arm64.tar.gz"
+      sha256 "08d38ab9e00cf59725c5513966c7b8d5ff7b4a4248363acb7cf9d925bb9182a6"
 
       def install
         bin.install "upbit"
@@ -30,8 +30,8 @@ class Upbit < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kyungw00k/upbit/releases/download/v1.4.0/upbit_linux_amd64.tar.gz"
-        sha256 "afb398dd66560b48bfc6fd4b092d002d9b6858012eb1e242fea27bb8d2f23103"
+        url "https://github.com/kyungw00k/upbit/releases/download/v1.5.0/upbit_linux_amd64.tar.gz"
+        sha256 "7b7e8017f4351861c27def4c959736145b8b0cfb32a1b9b6cecb0dda906d6b34"
 
         def install
           bin.install "upbit"
@@ -40,8 +40,8 @@ class Upbit < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kyungw00k/upbit/releases/download/v1.4.0/upbit_linux_arm64.tar.gz"
-        sha256 "cddc34abc251629ce4cb07c51c880287bb10d4baea5a614c7d6057630721102b"
+        url "https://github.com/kyungw00k/upbit/releases/download/v1.5.0/upbit_linux_arm64.tar.gz"
+        sha256 "c98b5f9a80752edeb7df59ffc6cf3e86e831466991ecc1476bbd167c508169da"
 
         def install
           bin.install "upbit"
